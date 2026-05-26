@@ -7,23 +7,88 @@
     <link rel="icon" type="image/png" href="logo.png" />
     <style>
       html, body {
-        height: 100%;
         margin: 0;
         background: #fff;
+        color: #222;
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
       }
-      body {
-        display: flex;
-        align-items: center;
-        justify-content: center;
+      main {
+        max-width: 640px;
+        margin: 0 auto;
+        padding: 2rem 1.25rem 4rem;
       }
-      img {
-        width: min(60vmin, 460px);
+      img.logo {
+        width: min(40vmin, 280px);
         height: auto;
         display: block;
+        margin: 1rem auto 2rem;
+      }
+      h2 {
+        margin-top: 2rem;
+        font-size: 1.1rem;
+        text-transform: uppercase;
+        letter-spacing: 0.08em;
+        color: #555;
+      }
+      ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+      }
+      li {
+        padding: 0.5rem 0;
+        border-bottom: 1px solid #eee;
+      }
+      a {
+        color: #1a6bcf;
+        text-decoration: none;
+      }
+      a:hover {
+        text-decoration: underline;
+      }
+      .date {
+        display: inline-block;
+        min-width: 7rem;
+        color: #888;
+        font-variant-numeric: tabular-nums;
       }
     </style>
   </head>
   <body>
-    <img src="logo.png" alt="Copenhagen Clojurians logo" />
+    <main>
+      <img class="logo" src="logo.png" alt="Copenhagen Clojurians logo" />
+
+      <h2>Next meetup</h2>
+      <ul>
+        <li>
+          <span class="date">2026-06-18</span>
+          <a href="https://clojureverse.org/t/copenhagen-clojure-meetup-18-6/14899">Copenhagen Clojure Meetup 18/6</a>
+        </li>
+      </ul>
+
+      <h2>Past meetups</h2>
+      <ul>
+        <li>
+          <span class="date">2026-05-07</span>
+          <a href="https://clojureverse.org/t/copenhagen-clojure-meetup/14895">tjat — demo by grav</a>
+        </li>
+        <li>
+          <span class="date">2026-03-26</span>
+          <a href="https://www.meetup.com/copenhagen-clojure-meetup/events/313226909/">TBA</a>
+        </li>
+        <li>
+          <span class="date">2026-02-05</span>
+          <a href="https://www.meetup.com/copenhagen-clojure-meetup/events/312207149/">Talk about "JSInterface"</a>
+        </li>
+        <li>
+          <span class="date">2025-11-27</span>
+          <a href="https://www.meetup.com/copenhagen-clojure-meetup/events/311763023/">Datastar</a>
+        </li>
+        <li>
+          <span class="date">earlier</span>
+          <a href="https://www.meetup.com/copenhagen-clojure-meetup/events/?type=past">More past events on Meetup.com</a>
+        </li>
+      </ul>
+    </main>
   </body>
 </html>
